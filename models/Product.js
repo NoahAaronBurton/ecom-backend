@@ -20,8 +20,8 @@ Product.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    price: { //! dont know how to test
-      type: DataTypes.DECIMAL, //? add arguments for precision and scale
+    price: {
+      type: DataTypes.DECIMAL(10, 2), //? add arguments for precision and scale
       allowNull: false,
       validate: {
         isDecimal: {
