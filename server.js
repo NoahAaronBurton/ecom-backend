@@ -17,6 +17,6 @@ app.use(routes);
 // });
 
 // ! force:true resets the db on start up. false will keep intact
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
